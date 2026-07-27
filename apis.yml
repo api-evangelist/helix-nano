@@ -1,7 +1,27 @@
 aid: helix-nano
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/helix-nano.png
 name: Helix Nano
-description: Helix Nano is a company surfaced as a portfolio company of dcvc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Helix Nano (HelixNano) is a Boston-based biotechnology company developing
+  new ways to manipulate messenger RNA (mRNA) — the molecule that carries instructions
+  from genes to the cell's protein-making machinery. Backed by DCVC since 2017, the
+  company has developed techniques to improve the effectiveness and specificity of
+  mRNA vaccines, including a next-generation COVID-19 vaccine engineered to resist
+  viral mutation. HelixNano is now pursuing a broader vision of self-designing, adaptive
+  therapeutics — drugs that could improve with every patient and, ideally, require
+  only a single dose. The company operates out of 5 Channel Center Street in Boston,
+  Massachusetts, and remains at an early, largely stealth stage with no public developer
+  program or API surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/helix-nano/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Biotechnology
+- mRNA
+- Vaccines
+- Therapeutics
+- Life Sciences
+- Drug Discovery
 apis: []
+common:
+- type: DomainSecurity
+  url: security/helix-nano-domain-security.yml
+- type: Website
+  url: https://www.helixnano.com
+- type: Careers
+  url: https://www.helixnano.com/careers
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
